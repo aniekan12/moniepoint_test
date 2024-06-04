@@ -10,11 +10,11 @@ class App extends StatefulWidget {
 }
 
 class _AppState extends State<App> {
-  final router = locator.get<GoRouter>();
+  final _router = locator.get<GoRouter>();
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      routerConfig: router,
+      routerConfig: _router,
       debugShowCheckedModeBanner: false,
     );
   }
